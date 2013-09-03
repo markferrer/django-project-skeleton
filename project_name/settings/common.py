@@ -1,7 +1,6 @@
-# Django settings for project_name project.
+# Django settings for {{ project_name }} project.
 from os.path import join as dir_join
 import sys
-
 
 
 PROJECT_ROOT = '{{ project_directory }}'
@@ -160,9 +159,3 @@ LOGGING = {
         },
     }
 }
-
-
-try:
-    from local_settings import *
-except ImportError, e:
-    pass
